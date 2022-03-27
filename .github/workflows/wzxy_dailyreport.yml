@@ -2,12 +2,12 @@ name: WZXY_DailyReport
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [ main ]
+  push:
+     branches: [ main ]
 
   schedule:
   # Github Action 使用世界标准时间（UTC），北京时间（UTC+8）转换为世界标准时需要减去8小时
-    - cron:  '32 8,16 * * *' # 默认在每天 UTC 08:00（北京时间 16:00）执行
+    - cron:  '45 8,16 * * *' # 默认在每天 UTC 08:00（北京时间 16:00）执行
 
 jobs:
   USER_01:
