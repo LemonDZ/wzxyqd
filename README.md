@@ -6,7 +6,7 @@
 
 https://www.sizau.com/a/wzxy-signature.html
 
-## 修改详见wzxy-dailyreport.py内第9行和第146行注释
+## 使用前请认真阅读大佬博客，然后修改wzxy-dailyreport.py内第9行和第146行代码，注释为参考。
 
 
 
