@@ -6,7 +6,7 @@
 
 https://www.sizau.com/a/wzxy-signature.html
 
-修改详见wzxy-dailyreport.py内第9行和第146行注释
+## 修改详见wzxy-dailyreport.py内第9行和第146行注释
 
 
 
