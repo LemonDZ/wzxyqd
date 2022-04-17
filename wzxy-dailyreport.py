@@ -6,7 +6,7 @@ import utils
 import time
 import hashlib
 sign_time = int(round(time.time() * 1000)) #13位
-content = f"陕西省_{sign_time}_西安市"
+content = f"陕西省_{sign_time}_西安市" #请注意修改
 signature = hashlib.sha256(content.encode('utf-8')).hexdigest()
 from urllib.parse import urlencode
 
@@ -143,7 +143,7 @@ class WoZaiXiaoYuanPuncher:
             "myArea": "",
             "areacode": "",
             "userId": "",
-            "city_code": "156610100",
+            "city_code": "156610100",# 城市代码记得替换，抓包或者参考https://www.jianshu.com/p/89a56dce79f5不一定都对
             "timestampHeader": sign_time,
             "signatureHeader": signature
         }
