@@ -1,5 +1,12 @@
 # WoZaiXiaoYuanPuncher-Actions
 
+2022年4月18日 参考大佬博客对代码进行了修改
+https://www.sizau.com/a/wzxy-signature.html
+修改详见wzxy-dailyreport.py内第9行和第146行注释
+
+
+
+
 我在校园自动打卡程序：[zimin9/WoZaiXiaoYuanPuncher](https://github.com/zimin9/WoZaiXiaoYuanPuncher) 的 Github Action 版。
 
 基于原仓库中 [@Chorer](https://github.com/Chorer) 贡献的腾讯云函数版脚本修改。
