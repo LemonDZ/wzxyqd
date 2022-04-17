@@ -3,6 +3,11 @@ import requests
 import json
 import os
 import utils
+import time
+import hashlib
+sign_time = int(round(time.time() * 1000)) #13位
+content = f"陕西省_{sign_time}_西安市"
+signature = hashlib.sha256(content.encode('utf-8')).hexdigest()
 from urllib.parse import urlencode
 
 
@@ -138,6 +143,9 @@ class WoZaiXiaoYuanPuncher:
             "myArea": "",
             "areacode": "",
             "userId": ""
+            "city_code": "156610100",
+            "timestampHeader": sign_time,
+            "signatureHeader": signature
         }
         data = urlencode(sign_data)
         self.session = requests.session()    
