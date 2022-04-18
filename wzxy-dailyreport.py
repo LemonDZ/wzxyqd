@@ -6,7 +6,7 @@ import utils
 import time
 import hashlib
 sign_time = int(round(time.time() * 1000)) #13位
-content = f"陕西省_{sign_time}_西安市" #请注意修改
+content = f"{os.environ['WZXY_PROVINCE']}_{sign_time}_{os.environ['WZXY_CITY']}" 
 signature = hashlib.sha256(content.encode('utf-8')).hexdigest()
 from urllib.parse import urlencode
 
