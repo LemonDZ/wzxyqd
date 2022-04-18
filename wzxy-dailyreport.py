@@ -143,7 +143,7 @@ class WoZaiXiaoYuanPuncher:
             "myArea": "",
             "areacode": "",
             "userId": "",
-            "city_code": "156610100",# 城市代码记得替换，抓包或者参考https://www.jianshu.com/p/89a56dce79f5不一定都对
+            "city_code": os.environ['WZXY_CITYCODE'],
             "timestampHeader": sign_time,
             "signatureHeader": signature
         }
